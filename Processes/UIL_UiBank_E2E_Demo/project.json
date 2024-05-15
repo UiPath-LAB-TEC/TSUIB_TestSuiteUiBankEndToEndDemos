@@ -1,0 +1,111 @@
+{
+  "name": "UIL_UiBank_E2E_Demo",
+  "projectId": "091e245d-0803-4b38-8bf3-25a28cc7ab70",
+  "description": "Test Automation Project",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.22.3]",
+    "UiPath.Mail.Activities": "[1.21.1]",
+    "UiPath.MobileAutomation.Activities": "[23.10.2]",
+    "UiPath.PDF.Activities": "[3.16.0]",
+    "UiPath.System.Activities": "[23.10.3]",
+    "UiPath.Testing.Activities": "[23.10.0]",
+    "UiPath.UIAutomation.Activities": "[23.10.6]",
+    "UiPath.WebAPI.Activities": "[1.18.0]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.4.4.0",
+  "projectVersion": "1.13.1",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "templateType": "ExecutionTemplate",
+        "fileName": ".templates\\UiBankWebExecutionTemplate.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "fa639999-01e6-4dc1-9a15-d427a4f3d317",
+        "testCaseType": "TestCase",
+        "fileName": "Unpublished\\UiBank_E2E_Create_Transactions_Verify_Terminal.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a532e6ec-1155-4a8f-9496-f770bb69c265",
+        "testCaseType": "TestCase",
+        "fileName": "Unpublished\\UiBank_E2E_CreateUser_Attempt_Login_Success_Logout_Success.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "544a2299-65a0-44c7-9dc4-45cbde752c75",
+        "testCaseType": "TestCase",
+        "fileName": "Unpublished\\UiBank_E2E_CreateUser_Attempt_Login_Without_Verify_Fail_Login.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a4e97971-97a0-4378-b522-a33de341770b",
+        "testCaseType": "TestCase",
+        "fileName": "Unpublished\\UiBank_E2E_CreateUser_Verify_Transactions_Mobile.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "198db536-39aa-41db-8a0f-515859dd06d0",
+        "testCaseType": "TestCase",
+        "fileName": "UiBank_E2E_CreateUser_Verify_Transactions_PL.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "09505992-a9c7-458c-ab21-877159c50bb8",
+        "testCaseType": "TestCase",
+        "fileName": "Test Cases\\UiBank_E2E_CreateUser_Verify_Transactions.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7d919695-0f90-4090-9a68-a138533a31b7",
+        "testCaseType": "TestCase",
+        "fileName": "UiBank_E2E_CreateUser_Verify_Transactions.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c2b9bccb-1e0b-4915-aa47-f8d1ac07e13b",
+        "testCaseType": "TestCase",
+        "fileName": "Unpublished\\E2E -Including_Mobile.xaml"
+      }
+    ],
+    "modernBehavior": true,
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

@@ -1,0 +1,489 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:utat="clr-namespace:UiPath.Testing.Activities.TestData;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="UiBankUserEmail" Type="OutArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>655.2,6402.4</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>TestCase_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="76">
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.Testing.Activities.TestData</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.Web</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Studio.Forms.Runtime</x:String>
+      <x:String>UiPath.Callout.Activities</x:String>
+      <x:String>UiPath.Platform.GlobalVariables</x:String>
+      <x:String>UiPath.Callout.Activities.Base</x:String>
+      <x:String>System.Windows.Media</x:String>
+      <x:String>UiPath.Callout.Activity</x:String>
+      <x:String>UiPath.ContactCenter.Shared</x:String>
+      <x:String>UiPathTeam.Interactive.Activities.Properties</x:String>
+      <x:String>UiPathTeam.Interactive.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="80">
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MobileAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.MobileAutomation</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Forms.Runtime</AssemblyReference>
+      <AssemblyReference>UiPath.Callout.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Callout.Activity</AssemblyReference>
+      <AssemblyReference>UiPathTeam.Interactive.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="UiBankE2ENoMobile" sap:VirtualizedContainerService.HintSize="665.6,6337.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ss:SecureString" Name="AdminPassword" />
+      <Variable x:TypeArguments="x:String" Name="AdminUsername" />
+      <Variable x:TypeArguments="x:String" Name="UiBankAPI" />
+      <Variable x:TypeArguments="x:String" Name="UiBankAdmin" />
+      <Variable x:TypeArguments="x:String" Name="FirstName" />
+      <Variable x:TypeArguments="x:String" Name="LastName" />
+      <Variable x:TypeArguments="x:String" Name="UiBankUser" />
+      <Variable x:TypeArguments="x:String" Name="gender" />
+      <Variable x:TypeArguments="ss:SecureString" Name="UiBankNewUserPassword" />
+      <Variable x:TypeArguments="x:String" Name="UiBankUserVerifiedEmail" />
+      <Variable x:TypeArguments="x:String" Name="UserCreatedInMailinator" />
+      <Variable x:TypeArguments="x:String" Name="UserFirstName" />
+      <Variable x:TypeArguments="x:String" Name="UserLastName" />
+      <Variable x:TypeArguments="x:String" Name="UserMiddleName" />
+      <Variable x:TypeArguments="x:String" Name="CreateUserResponse" />
+      <Variable x:TypeArguments="ui:UiElement" Name="uibankDesktopApp" />
+      <Variable x:TypeArguments="x:String" Name="newUserStrPassword" />
+      <Variable x:TypeArguments="x:Int32" Name="handle" />
+      <Variable x:TypeArguments="x:Int32" Name="tmp_handle" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="603.2,1400.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="540.8,52.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Retrieving assets and credentials from the orchestrator&quot;]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Setup Environment workflow" sap:VirtualizedContainerService.HintSize="540.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="_Helpers\Setup Environment.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="x:String" x:Key="UiBankAPI">[UiBankAPI]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="UiBankWeb" />
+          <OutArgument x:TypeArguments="x:String" x:Key="UiBankAdmin">[UiBankAdmin]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="UiBankMainApp" />
+          <OutArgument x:TypeArguments="x:String" x:Key="UiBankMainFolder" />
+          <OutArgument x:TypeArguments="ss:SecureString" x:Key="AdminPassword">[AdminPassword]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="AdminUsername">[AdminUsername]</OutArgument>
+          <OutArgument x:TypeArguments="ss:SecureString" x:Key="SuperAdminPassword" />
+          <OutArgument x:TypeArguments="ss:SecureString" x:Key="SapPassword" />
+          <OutArgument x:TypeArguments="x:String" x:Key="SapUsername" />
+          <OutArgument x:TypeArguments="ss:SecureString" x:Key="UiBankNewUserPassword">[UiBankNewUserPassword]</OutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_FolderName">InternalDemos/TSUIB_TestSuite_UiBank</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <Sequence DisplayName="Generate Random User" sap:VirtualizedContainerService.HintSize="540.8,1042.4" sap2010:WorkflowViewState.IdRef="Sequence_16">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Generating random user details&quot;]" />
+        <utat:GivenName DisplayName="Given Name" GivenNameResult="[FirstName]" sap:VirtualizedContainerService.HintSize="478.4,90.4" sap2010:WorkflowViewState.IdRef="GivenName_1" />
+        <utat:LastName DisplayName="Last Name" sap:VirtualizedContainerService.HintSize="478.4,90.4" sap2010:WorkflowViewState.IdRef="LastName_1" LastNameResult="[LastName]" />
+        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.4,304.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+          <ui:MultipleAssign.AssignOperations>
+            <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="x:String">[UserFirstName]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="x:String">[FirstName.ToLower]</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="x:String">[UserLastName]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="x:String">[LastName.ToLower]</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="x:String">[UserMiddleName]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="x:String">demo</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="x:String">[UiBankUser]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="x:String">[UserFirstName+UserLastName]</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="x:String">[UiBankUserEmail]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="x:String">["uibank_e2e_"+UiBankUser+"@mailinator.com"]</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="x:String">[gender]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="x:String">male</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="x:String">[newUserStrPassword]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="x:String">[new System.Net.NetworkCredential(string.Empty, UiBankNewUserPassword).Password]</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+            </scg:List>
+          </ui:MultipleAssign.AssignOperations>
+        </ui:MultipleAssign>
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Uibank User is &quot;+ UiBankUserEmail]" />
+      </Sequence>
+    </Sequence>
+    <Sequence DisplayName="When creating email Inbox for user" sap:VirtualizedContainerService.HintSize="603.2,408" sap2010:WorkflowViewState.IdRef="Sequence_11">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Creating email account for user&quot;]" />
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke CreateMailinatorEmailAccount workflow" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="_Helpers\Mailinator_CreateEmailAccount.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="UserNameEmail">[UiBankUserEmail]</InArgument>
+          <InOutArgument x:TypeArguments="x:String" x:Key="UserNameEmailInbox">[UserCreatedInMailinator]</InOutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="Then verify email inbox created for user" sap:VirtualizedContainerService.HintSize="603.2,488" sap2010:WorkflowViewState.IdRef="Sequence_12">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Verifying whether email inbox is created.&quot;]" />
+      <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify User Email Account Creation" sap:VirtualizedContainerService.HintSize="387.2,193.6" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Contains" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+        <uta:VerifyExpressionWithOperator.FirstExpression>
+          <InArgument x:TypeArguments="x:String">[UserCreatedInMailinator]</InArgument>
+        </uta:VerifyExpressionWithOperator.FirstExpression>
+        <uta:VerifyExpressionWithOperator.SecondExpression>
+          <InArgument x:TypeArguments="x:String">[UiBankUser]</InArgument>
+        </uta:VerifyExpressionWithOperator.SecondExpression>
+      </uta:VerifyExpressionWithOperator>
+    </Sequence>
+    <Sequence DisplayName="When I create a user via the UiBank API" sap:VirtualizedContainerService.HintSize="603.2,365.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Creating user in UiBank application using API&quot;]" />
+      <ui:HttpClient Body="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/xml" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="https://uibank-api.uipath.com/api/users" sap:VirtualizedContainerService.HintSize="387.2,71.2" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" Password="[Nothing]" Result="[CreateUserResponse]" TimeoutMS="6000" Username="[Nothing]">
+        <ui:HttpClient.Attachments>
+          <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+        </ui:HttpClient.Attachments>
+        <ui:HttpClient.Cookies>
+          <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+        </ui:HttpClient.Cookies>
+        <ui:HttpClient.Headers>
+          <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+        </ui:HttpClient.Headers>
+        <ui:HttpClient.Parameters>
+          <InArgument x:TypeArguments="x:String" x:Key="gender">[gender]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="dateOfBirth">2022-08-12T15:50:16.116Z</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="password">[newUserStrPassword]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="title">mr</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="firstName">[UserFirstName]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="middleName">[UserMiddleName]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="lastName">[UserLastName]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="type">customer</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="employmentStatus">Employed</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="maritalStatus">single</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="numDependants">0</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="residenceStatus">Home owner</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="locked">false</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="realm">""</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="username">[UiBankUser]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="email">[UiBankUserEmail]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="emailVerified">true</InArgument>
+        </ui:HttpClient.Parameters>
+        <ui:HttpClient.UrlSegments>
+          <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+        </ui:HttpClient.UrlSegments>
+      </ui:HttpClient>
+    </Sequence>
+    <Sequence DisplayName="Then validate the user created via UiBank API matches the expected user" sap:VirtualizedContainerService.HintSize="603.2,670.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="403.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[CreateUserResponse]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="403.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Verifying whether user is created successfully for UiBank&quot;]" />
+      <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify User Creation in UiBank via API" sap:VirtualizedContainerService.HintSize="403.2,193.6" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_2" Operator="Contains" OutputMessageFormat="API response {LeftExpression} {Operator} {RightExpression}" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+        <uta:VerifyExpressionWithOperator.FirstExpression>
+          <InArgument x:TypeArguments="x:String">[CreateUserResponse]</InArgument>
+        </uta:VerifyExpressionWithOperator.FirstExpression>
+        <uta:VerifyExpressionWithOperator.SecondExpression>
+          <InArgument x:TypeArguments="x:String">[UiBankUser]</InArgument>
+        </uta:VerifyExpressionWithOperator.SecondExpression>
+      </uta:VerifyExpressionWithOperator>
+    </Sequence>
+    <Sequence DisplayName="When I login to the UiBank Desktop application" sap:VirtualizedContainerService.HintSize="603.2,408" sap2010:WorkflowViewState.IdRef="Sequence_9">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Logging in to UiBank Desktop Application with admin credentials&quot;]" />
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Login Admin workflow" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="UiBank_Libs\Desktop\Login Admin.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="UiBankAdmin">[UiBankAdmin]</InArgument>
+          <InArgument x:TypeArguments="ss:SecureString" x:Key="AdminPassword">[AdminPassword]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="AdminUsername">[AdminUsername]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="UiBankAPI">[UiBankAPI]</InArgument>
+          <OutArgument x:TypeArguments="ui:UiElement" x:Key="UibankDesktopApp">[uibankDesktopApp]</OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="Then validate the user has been created in the UiBank system using Desktop app" sap:VirtualizedContainerService.HintSize="603.2,408" sap2010:WorkflowViewState.IdRef="Sequence_13">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="440.8,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Filtering user details in UiBank Desktop Application&quot;]" />
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke UiBankDesktopAppVerifyUser workflow" sap:VirtualizedContainerService.HintSize="440.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="UiBank_Libs\Desktop\UiBankDesktopAppVerifyUser.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InOutArgument x:TypeArguments="ui:UiElement" x:Key="UibankDesktopApp">[uibankDesktopApp]</InOutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="User_To_Validate">[UiBankUser]</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="Then verify the created user account" sap:VirtualizedContainerService.HintSize="603.2,408" sap2010:WorkflowViewState.IdRef="Sequence_15">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Verifying the user for UiBank using mailinator inbox&quot;]" />
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke UiBank_Verify_User_Email workflow" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="UiBank_Libs\UiBank_Verify_User_Email.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="UiBank_User_Name_To_Verify">[UiBankUser]</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="Then create accounts and accounts are visibile in pdf" sap:VirtualizedContainerService.HintSize="603.2,1348.8" sap2010:WorkflowViewState.IdRef="Sequence_14">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Int32" Name="tmp_handle" />
+        <Variable x:TypeArguments="x:Boolean" Name="AdobeThirtytwobitsExists" />
+        <Variable x:TypeArguments="x:String" Name="pdfPath" />
+        <Variable x:TypeArguments="ui:UiElement" Name="uib_Browser" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;Logging in to UiBank Web Application with user credentials&quot;]" />
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke UiBank_Web_Login workflow" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="UiBank_Libs\Web\UiBank_Web_Login.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="UiBank_User_Web_in">
+            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="UiBankUser" />
+          </InArgument>
+          <OutArgument x:TypeArguments="ui:UiElement" x:Key="out_Browser">
+            <VisualBasicReference x:TypeArguments="ui:UiElement" ExpressionText="uib_Browser" />
+          </OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Check Adobe Acrobat Reader.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="UiBank_Libs\PDF\Check Adobe Acrobat Reader.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_pdfPath">[pdfPath]</OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke UiBank_Login_To_Web_Interface_Transfer_Money_Validate_PDF workflow" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="UiBank_Libs\Web\UiBank_Web_Transfer_Money_Validate_PDF.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="UiBank_User_Web_in">
+            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="UiBankUser" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="adobeAcrobatPath">
+            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="pdfPath" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="TargetFolder" />
+          <InArgument x:TypeArguments="ui:UiElement" x:Key="in_Browser">
+            <VisualBasicValue x:TypeArguments="ui:UiElement" ExpressionText="uib_Browser" />
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[&quot;Deleting the user from UiBank&quot;]" />
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="UiBank_Libs\Desktop\UiBank_Desktop_Delete_User_New.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="UiBank_Libs\Desktop\UiBank_Desktop_Delete_User_New.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="UiBankUserEmail">[UiBankUserEmail]</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info" Message="[&quot;Deleting the subfolders from Demo folder&quot;]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+      <ui:InvokeCode ContinueOnError="{x:Null}" Code="If Directory.Exists(in_folderPath) Then&#xA;&#x9;&#x9;Try&#xA;        &#x9;Dim subfolders As String() = Directory.GetDirectories(in_folderPath)&#xA;&#x9;&#x9;&#x9;For Each subfolder In subfolders&#xA;                Directory.Delete(subfolder, True) &#xA;            Next&#xA;            Console.WriteLine(&quot;Subfolders deleted successfully.&quot;)&#xA;&#x9;&#x9;&#x9; Catch ex As Exception&#xA;             Console.WriteLine($&quot;Error: {ex.Message}&quot;)&#xA;        End Try&#xA;        Else&#xA;            Console.WriteLine(&quot;Folder does not exist.&quot;)&#xA;        End If" DisplayName="Invoke Code Remove Demo subfolders" sap:VirtualizedContainerService.HintSize="387.2,164.8" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+        <ui:InvokeCode.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key=" in_folderPath">Demo</InArgument>
+        </ui:InvokeCode.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeCode>
+    </Sequence>
+  </Sequence>
+</Activity>
